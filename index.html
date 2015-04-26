@@ -7,27 +7,26 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1344.72">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Consolas; color: #101010; -webkit-text-stroke: #101010}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Heiti SC Light'; color: #101010; -webkit-text-stroke: #101010}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Consolas; color: #101010; -webkit-text-stroke: #101010; background-color: #f5f2f0}
-    span.s1 {font-kerning: none; background-color: #f5f2f0; text-shadow: 0.0px 1.0px 0.0px #000000}
-    span.s2 {font: 16.0px 'Heiti SC Light'; font-kerning: none; background-color: #f5f2f0; text-shadow: 0.0px 1.0px 0.0px #000000}
-    span.s3 {font: 16.0px Consolas; font-kerning: none; background-color: #f5f2f0; text-shadow: 0.0px 1.0px 0.0px #000000}
-    span.s4 {font: 16.0px 'Heiti SC Light'; font-kerning: none; text-shadow: 0.0px 1.0px 0.0px #000000}
-    span.s5 {font-kerning: none; text-shadow: 0.0px 1.0px 0.0px #000000}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Cambria}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Consolas; color: #101010; -webkit-text-stroke: #101010; min-height: 19.0px}
+    span.s1 {font: 12.0px 'MS Mincho'}
+    span.s2 {font: 12.0px 'Times New Roman'}
+    span.s3 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">---</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">layout: default</span></p>
-<p class="p2"><span class="s1">　　</span><span class="s3">title: </span><span class="s1">Elsa Wang</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">---</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;h2&gt;{{ page.title }}&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;p&gt;</span><span class="s2">最新文章</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;ul&gt;</span></p>
-<p class="p1"><span class="s2">　　　　</span><span class="s1">{% for post in site.posts %}</span></p>
-<p class="p1"><span class="s2">　　　　　　</span><span class="s1">&lt;li&gt;{{ post.date | date_to_string }} &lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s2">　　　　</span><span class="s1">{% endfor %}</span></p>
-<p class="p3"><span class="s4">　　</span><span class="s5">&lt;/ul&gt;</span></p>
+<p class="p1">---</p>
+<p class="p2"><span class="s1">　　</span>layout: default</p>
+<p class="p2"><span class="s1">　　</span>title: <span class="s1">我的</span>Blog</p>
+<p class="p1"><span class="s1">　　</span>---</p>
+<p class="p2"><span class="s1">　　</span>&lt;h2&gt;{{ page.title }}&lt;/h2&gt;</p>
+<p class="p2"><span class="s1">　　</span>&lt;p&gt;<span class="s1">最新文章</span>&lt;/p&gt;</p>
+<p class="p2"><span class="s1">　　</span>&lt;ul&gt;</p>
+<p class="p2"><span class="s1">　　　　</span><span class="s2">{</span>% for post in site.posts %}</p>
+<p class="p2"><span class="s1">　　　　　　</span>&lt;li&gt;{{ post.date | date_to_string }} &lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p2"><span class="s1">　　　　</span><span class="s2">{</span>% endfor %}</p>
+<p class="p2"><span class="s1">　　</span>&lt;/ul&gt;</p>
+<p class="p3"><span class="s3"></span><br></p>
 </body>
 </html>
